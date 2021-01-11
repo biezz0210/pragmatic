@@ -18,6 +18,7 @@ class AccountCreateView(CreateView):
     model = User
     form_class = UserCreationForm
     # reverse는 def, reverse_lazy는 class에서 사용
+    # 이거 바꿔야해 accountapp에는 home이 없으
     success_url = reverse_lazy('accountapp:home')
     template_name = 'accountapp/create.html'
 
