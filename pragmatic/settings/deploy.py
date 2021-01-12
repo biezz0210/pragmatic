@@ -33,5 +33,18 @@ DATABASES = {
         'PASSWORD': '7890uiop',
         'HOST': 'mariadb',
         'PORT': '3306',
+        # optional:
+        'OPTIONS': {
+            'charset': 'utf8',
+            'use_unicode': True,
+            'init_command': 'SET '
+                'storage_engine=INNODB,'
+                'character_set_connection=utf8,'
+                'collation_connection=utf8_bin'
+                # 'sql_mode=STRICT_TRANS_TABLES,'    # see note below
+                #'SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+        },
+        'TEST_CHARSET': 'utf8',
+        'TEST_COLLATION': 'utf8_general_ci',
     }
 }
