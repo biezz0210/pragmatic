@@ -151,3 +151,6 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+
+aws_pragmatic_key.pem
+docker-compose_v1.yml
